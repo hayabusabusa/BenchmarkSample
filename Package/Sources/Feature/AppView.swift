@@ -51,3 +51,15 @@ public struct AppView: View {
         self.store = store
     }
 }
+
+// MARK: - Preview
+
+#Preview {
+    AppView(
+        store: Store(
+            initialState: AppFeature.State()
+        ) {
+            AppFeature()
+        }
+    )
+}
